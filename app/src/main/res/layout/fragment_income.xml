@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="moneytor.moneytor.Income">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/infield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:ems="10"
+            android:hint="Enter income type"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/infieldnr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/infield"
+            android:layout_alignStart="@+id/infield"
+            android:layout_below="@+id/infield"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="Enter income here"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/subincome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infieldnr"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="Submit income" />
+
+        <ListView
+            android:id="@+id/listveiw_in"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/subincome"
+            android:layout_marginTop="18dp" />
+    </RelativeLayout>
+
+</FrameLayout>
