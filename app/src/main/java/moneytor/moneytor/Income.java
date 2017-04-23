@@ -42,13 +42,13 @@ public class Income extends Fragment {
         // Inflate the layout for this fragment
         View veiw = inflater.inflate(R.layout.fragment_income, container, false);
 
-        inty = (EditText) inty.findViewById(R.id.infield);
-        innr = (EditText) innr.findViewById(R.id.infieldnr);
-        submit_in = (Button) submit_in.findViewById(R.id.subincome);
-        arrayList = new ArrayList<String>();
-        ListView listView = (ListView) listView_in.findViewById(R.id.listveiw_in);
+        inty = (EditText) veiw.findViewById(R.id.infield);
+        innr = (EditText) veiw.findViewById(R.id.infieldnr);
+        submit_in = (Button) veiw.findViewById(R.id.subincome);
+        listView_in = (ListView) veiw.findViewById(R.id.listveiw_in);
 
-        ArrayAdapter<String> listVeiwAdpter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, arrayList);
+        arrayList = new ArrayList<String>();
+        adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, arrayList);
         listView_in.setAdapter(adapter);
 
         onBtnClick();
